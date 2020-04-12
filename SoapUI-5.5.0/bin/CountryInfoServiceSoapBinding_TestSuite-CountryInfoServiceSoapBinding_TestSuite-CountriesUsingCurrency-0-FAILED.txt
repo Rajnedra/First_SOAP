@@ -1,0 +1,77 @@
+Status: FAILED
+Time Taken: 247
+Size: 1275
+Timestamp: Sat Mar 28 21:54:34 SGT 2020
+TestStep: CountriesUsingCurrency
+
+----------------- Messages ------------------------------
+[XPath Match] XPathContains assertion failed for path [] : RuntimeException:net.sf.saxon.trans.XPathException: XPath syntax error at char 0 in {}:
+    Unexpected token "<eof>" in path expression
+
+----------------- Properties ------------------------------
+Endpoint: http://webservices.oorsprong.org/websamples.countryinfo/CountryInfoService.wso
+Encoding: UTF-8
+
+---------------- Request ---------------------------
+Request Headers: SOAPAction : ""
+Connection : Keep-Alive
+User-Agent : Apache-HttpClient/4.1.1 (java 1.5)
+Host : webservices.oorsprong.org
+Accept-Encoding : gzip,deflate
+Content-Length : 350
+Content-Type : text/xml;charset=UTF-8
+
+
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:web="http://www.oorsprong.org/websamples.countryinfo">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <web:CountriesUsingCurrency>
+         <web:sISOCurrencyCode>AUD</web:sISOCurrencyCode>
+      </web:CountriesUsingCurrency>
+   </soapenv:Body>
+</soapenv:Envelope>
+
+---------------- Response --------------------------
+Response Headers: Cache-Control : private, max-age=0
+Server : Microsoft-IIS/8.5
+Content-Encoding : gzip
+Vary : Accept-Encoding
+Web-Service : DataFlex 19.1
+#status# : HTTP/1.1 200 OK
+Content-Length : 525
+Date : Sat, 28 Mar 2020 13:33:55 GMT
+Content-Type : text/xml; charset=utf-8
+
+
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+   <soap:Body>
+      <m:CountriesUsingCurrencyResponse xmlns:m="http://www.oorsprong.org/websamples.countryinfo">
+         <m:CountriesUsingCurrencyResult>
+            <m:tCountryCodeAndName>
+               <m:sISOCode>AU</m:sISOCode>
+               <m:sName>Australia</m:sName>
+            </m:tCountryCodeAndName>
+            <m:tCountryCodeAndName>
+               <m:sISOCode>CC</m:sISOCode>
+               <m:sName>Cocos (Keeling) Islands</m:sName>
+            </m:tCountryCodeAndName>
+            <m:tCountryCodeAndName>
+               <m:sISOCode>CX</m:sISOCode>
+               <m:sName>Chrismas Island</m:sName>
+            </m:tCountryCodeAndName>
+            <m:tCountryCodeAndName>
+               <m:sISOCode>KI</m:sISOCode>
+               <m:sName>Kiribati</m:sName>
+            </m:tCountryCodeAndName>
+            <m:tCountryCodeAndName>
+               <m:sISOCode>NF</m:sISOCode>
+               <m:sName>Norfolk Island</m:sName>
+            </m:tCountryCodeAndName>
+            <m:tCountryCodeAndName>
+               <m:sISOCode>NR</m:sISOCode>
+               <m:sName>Nauru</m:sName>
+            </m:tCountryCodeAndName>
+         </m:CountriesUsingCurrencyResult>
+      </m:CountriesUsingCurrencyResponse>
+   </soap:Body>
+</soap:Envelope>

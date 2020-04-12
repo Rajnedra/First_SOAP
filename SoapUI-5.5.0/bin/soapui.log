@@ -1,0 +1,15 @@
+2020-04-12 23:50:43,208 INFO  [DefaultSoapUICore] Creating new settings at [C:\WINDOWS\system32\config\systemprofile\soapui-settings.xml]
+2020-04-12 23:50:44,970 INFO  [PluginManager] 0 plugins loaded in 2 ms
+2020-04-12 23:50:44,970 INFO  [DefaultSoapUICore] All plugins loaded
+2020-04-12 23:50:46,119 INFO  [WsdlProject] Loaded project from [file:/C:/Users/rajen/SoapUI/CountryInfoService-soapui-project.xml]
+2020-04-12 23:50:46,128 INFO  [SoapUITestCaseRunner] Running SoapUI tests in project [CountryInfoService]
+2020-04-12 23:50:46,129 INFO  [SoapUITestCaseRunner] Running TestCase [CountryInfoServiceSoapBinding TestSuite]
+2020-04-12 23:50:46,138 INFO  [SoapUITestCaseRunner] Running SoapUI testcase [CountryInfoServiceSoapBinding TestSuite]
+2020-04-12 23:50:46,146 INFO  [SoapUITestCaseRunner] running step [CapitalCity]
+2020-04-12 23:50:46,749 INFO  [SoapUITestCaseRunner] Assertion [Contains] has status VALID
+2020-04-12 23:50:46,750 INFO  [SoapUITestCaseRunner] running step [CountriesUsingCurrency]
+2020-04-12 23:50:46,970 INFO  [SoapUITestCaseRunner] Assertion [Contains] has status VALID
+2020-04-12 23:50:46,971 INFO  [SoapUITestCaseRunner] running step [CountryCurrency]
+2020-04-12 23:50:47,191 INFO  [SoapUITestCaseRunner] Assertion [Contains] has status VALID
+2020-04-12 23:50:47,192 INFO  [SoapUITestCaseRunner] Finished running SoapUI testcase [CountryInfoServiceSoapBinding TestSuite], time taken: 1034ms, status: FINISHED
+2020-04-12 23:50:47,192 INFO  [SoapUITestCaseRunner] TestCase [CountryInfoServiceSoapBinding TestSuite] finished with status [FINISHED] in 1034ms
